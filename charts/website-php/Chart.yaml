@@ -21,4 +21,4 @@ name: website-php
 sources:
   - https://github.com/murz-helm-charts/website-php
   - https://github.com/Murz-Containers/fpm-nginx
-version: 0.1.1
+version: 0.1.2

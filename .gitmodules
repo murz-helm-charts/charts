@@ -1,0 +1,3 @@
+[submodule "charts/matrix-hookshot"]
+	path = charts/matrix-hookshot
+	url = https://github.com/murz-helm-charts/matrix-hookshot.git

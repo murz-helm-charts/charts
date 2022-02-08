@@ -20,11 +20,12 @@ jobs:
           git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
           git submodule update --init
 
-      - name: Add dependencies
-        run: |
-          helm repo add bitnami https://charts.bitnami.com/bitnami
+      # This should work automatically?
+      # - name: Add dependencies
+      #   run: |
+      #     helm repo add bitnami https://charts.bitnami.com/bitnami
 
       - name: Run chart-releaser
-        uses: helm/chart-releaser-action@v1.1.0
+        uses: helm/chart-releaser-action@v1.3.0
         env:
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"

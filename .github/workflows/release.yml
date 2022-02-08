@@ -20,11 +20,13 @@ jobs:
           git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
           git submodule update --init
 
-      # This should work automatically? Issue https://github.com/helm/chart-releaser-action/issues/6
       - name: Add dependencies
         run: |
-          for dir in charts/*; do (cd $dir && helm dependency update); done
-          # helm repo add bitnami https://charts.bitnami.com/bitnami
+          # for dir in charts/*; do (cd $dir && helm dependency update); done
+          # This should work automatically? Issue https://github.com/helm/chart-releaser-action/issues/6
+
+          helm repo add bitnami https://charts.bitnami.com/bitnami
+          helm repo add common https://library-charts.k8s-at-home.com
 
       - name: Run chart-releaser
         uses: helm/chart-releaser-action@v1.3.0

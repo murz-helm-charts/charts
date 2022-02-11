@@ -1,3 +1,9 @@
 [submodule "charts/matrix-hookshot"]
 	path = charts/matrix-hookshot
 	url = https://github.com/murz-helm-charts/matrix-hookshot.git
+[submodule "charts/website-php"]
+	path = charts/website-php
+	url = https://github.com/murz-helm-charts/website-php.git
+[submodule "charts/salt-master"]
+	path = charts/salt-master
+	url = https://github.com/murz-helm-charts/salt-master.git

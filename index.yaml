@@ -29,6 +29,21 @@ entries:
     urls:
     - https://github.com/murz-helm-charts/murz-helm-charts/releases/download/matrix-hookshot-1.0.0/matrix-hookshot-1.0.0.tgz
     version: 1.0.0
+  salt-master:
+  - apiVersion: v2
+    appVersion: "3004.6"
+    created: "2022-02-11T15:13:55.419702538Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.3.0
+    description: SaltStack Server in Kubernetes - salt-master instance
+    digest: 3eefd291f56a92d6297b165ba83d41a1bb6190bd795b43e247fbeb7271170170
+    name: salt-master
+    type: application
+    urls:
+    - https://github.com/murz-helm-charts/murz-helm-charts/releases/download/salt-master-0.2.0/salt-master-0.2.0.tgz
+    version: 0.2.0
   saltstack:
   - apiVersion: v2
     appVersion: 1.0.0
@@ -68,4 +83,31 @@ entries:
     urls:
     - https://github.com/murz-helm-charts/murz-helm-charts/releases/download/website-php-0.1.2/website-php-0.1.2.tgz
     version: 0.1.2
-generated: "2022-02-08T17:27:28.378443633Z"
+  - annotations:
+      category: Website
+    apiVersion: v2
+    appVersion: 1.8.2
+    created: "2022-02-11T15:13:55.629786743Z"
+    dependencies:
+    - name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 10.0.3
+    description: Common website on PHP engine, using Nginx and PHP-FPM in single container
+    digest: 64ccebba091d94f073c8ed54f98670864f98d952d09424f01610ff632dee5de1
+    home: https://github.com/murz-helm-charts/website-php
+    keywords:
+    - php
+    - website
+    - php-fpm
+    - fpm-nginx
+    maintainers:
+    - email: MurzNN@gmail.com
+      name: Alexey Murz Korepov
+    name: website-php
+    sources:
+    - https://github.com/murz-helm-charts/website-php
+    - https://github.com/Murz-Containers/fpm-nginx
+    urls:
+    - https://github.com/murz-helm-charts/murz-helm-charts/releases/download/website-php-0.1.0/website-php-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-02-11T15:13:55.629797942Z"

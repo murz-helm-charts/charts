@@ -1,2 +1,0 @@
-# saltstack
-Saltstack Helm chart

@@ -59,6 +59,37 @@ entries:
   - annotations:
       category: Website
     apiVersion: v2
+    appVersion: latest
+    created: "2022-03-11T08:13:13.282659775Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.3.0
+    - name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 10.0.3
+    description: Common website on PHP engine, using Nginx and PHP-FPM in single container
+    digest: 1a566c2242fbeed0b3d7c85d8231b37d046790821fab15cbe3361c02cb30e6c4
+    home: https://github.com/murz-helm-charts/website-php
+    keywords:
+    - php
+    - website
+    - php-fpm
+    - fpm-nginx
+    maintainers:
+    - email: MurzNN@gmail.com
+      name: Alexey Murz Korepov
+    name: website-php
+    sources:
+    - https://github.com/murz-helm-charts/website-php
+    - https://github.com/Murz-Containers/fpm-nginx
+    type: application
+    urls:
+    - https://github.com/murz-helm-charts/murz-helm-charts/releases/download/website-php-0.2.0/website-php-0.2.0.tgz
+    version: 0.2.0
+  - annotations:
+      category: Website
+    apiVersion: v2
     appVersion: 1.8.2
     created: "2022-02-03T12:30:51.336562744Z"
     dependencies:
@@ -110,4 +141,4 @@ entries:
     urls:
     - https://github.com/murz-helm-charts/murz-helm-charts/releases/download/website-php-0.1.0/website-php-0.1.0.tgz
     version: 0.1.0
-generated: "2022-02-11T15:13:55.629797942Z"
+generated: "2022-03-11T08:13:13.282678175Z"

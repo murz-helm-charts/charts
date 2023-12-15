@@ -56,6 +56,41 @@ entries:
     - https://github.com/murz-helm-charts/murz-helm-charts/releases/download/saltstack-0.1.0/saltstack-0.1.0.tgz
     version: 0.1.0
   website-php:
+  - apiVersion: v2
+    appVersion: 0.1.1
+    created: "2023-12-15T09:15:19.64243903Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 2.3.0
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 14.1.4
+    - condition: phpmyadmin.enabled
+      name: phpmyadmin
+      repository: https://charts.bitnami.com/bitnami
+      version: 13.1.2
+    description: Common website on PHP engine, using Nginx and PHP-FPM in a single
+      container
+    digest: 62950f02711d308f5f30da827ef4f07ec5561395cc619470fb836685332a743e
+    home: https://github.com/murz-helm-charts/website-php
+    keywords:
+    - php
+    - website
+    - php-fpm
+    - fpm-nginx
+    maintainers:
+    - email: MurzNN@gmail.com
+      name: Alexey Murz Korepov
+    name: website-php
+    sources:
+    - https://github.com/murz-helm-charts/website-php
+    - https://github.com/Murz-Containers/fpm-nginx
+    type: application
+    urls:
+    - https://github.com/murz-helm-charts/murz-helm-charts/releases/download/website-php-0.3.0/website-php-0.3.0.tgz
+    version: 0.3.0
   - annotations:
       category: Website
     apiVersion: v2
@@ -177,4 +212,4 @@ entries:
     urls:
     - https://github.com/murz-helm-charts/murz-helm-charts/releases/download/website-php-0.1.0/website-php-0.1.0.tgz
     version: 0.1.0
-generated: "2022-03-18T05:23:52.016087832Z"
+generated: "2023-12-15T09:15:19.642465799Z"
